@@ -55,8 +55,10 @@ body {
     color: var(--white);
     font-weight: 500;
 }
-.profile > h3 {
+
+.profile > h2 {
     font-weight: 300;
+    color: var(--pale-blue);
 }
 
 nav {
@@ -84,6 +86,11 @@ nav > button {
     margin: 0vh 5vw 0vh 5vw;
     border-radius: 10%;
     z-index: 100;
+}
+
+.report {
+    color: var(--pale-blue);
+    display: block;
 }
 
 .top-work {
@@ -173,7 +180,7 @@ nav > button {
 .self-care {
     height: 20vh;
     background-color: var(--dark-blue);
-    margin: 0vh 5vw 0vh 5vw;
+    margin: 0vh 5vw 10vh 5vw;
     border-radius: 10%;
     z-index: 100;
 }
@@ -186,4 +193,8 @@ nav > button {
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 10;
+}
+
+.section-title {
+    color: var(--white);
 }
