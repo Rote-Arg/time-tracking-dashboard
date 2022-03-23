@@ -35,6 +35,10 @@ body {
     background-color: var(--very-dark-blue);
 }
 
+.none {
+    display: none;
+}
+
 .profile {
     display: flex;
     background-color: var(--blue);
