@@ -39,6 +39,10 @@ body {
     display: none;
 }
 
+.activate {
+    color: #ffffff;
+}
+
 .profile {
     display: flex;
     background-color: var(--blue);
