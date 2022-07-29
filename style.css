@@ -40,7 +40,7 @@ body {
 }
 
 .activate {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .profile {
