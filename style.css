@@ -206,3 +206,26 @@ nav > button {
 .section-title {
     color: var(--white);
 }
+
+.right {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    justify-content: center;
+    color: var(--pale-blue);
+    width: 50%;
+   /*  padding: 0 1rem 0 0; */
+}
+
+.left {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center;
+    color: var(--white);
+    width: 50%;
+
+    /* padding: 2.5rem 0 0 1rem; */
+
+    /* font-size: 1.25rem; Esto va solo en las horas actuales */
+}

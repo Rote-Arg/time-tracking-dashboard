@@ -22,7 +22,7 @@ let monthlyClass = () => {
 
 let activate = element => {
 
-    let elemento = element.target.classList
+  	let elemento = element.target.classList
     elemento.length == 0 ? elemento.add("activate") : null;
 
 
