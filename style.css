@@ -29,17 +29,16 @@
     --pale-blue: hsl(236, 100%, 87%);
 }
 
-body {
+.page {
     display: grid;
     background-color: var(--very-dark-blue);
-    grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw; 
-    grid-template-rows: 35vh 35vh 20vh; 
+    grid-template-columns: 24vw 24vw 24vw 24vw; 
+    grid-template-rows: 40vh 40vh 18vh; 
     gap: 1vh 1vw;
     grid-template-areas: 
-    "Gprofile Gwork Gplay Gstudy"
-    "Gprofile Gexercise Gsocial Gcare"
-    "footer footer footer footer"
-    ;
+    "profile1 work play study"
+    "profile2 exercise social care"
+    "footer footer footer footer";
 }
 
 .none {
@@ -51,40 +50,46 @@ body {
 }
 
 .profile {
-    display: flex;
+    grid-area: profile1;
     background-color: var(--blue);
     border-radius: 10%;
     margin: 10vh 0vw 0vh 8vw;
-    height: 20vh;
+    height: 40vh;
     width: 30vw;
     z-index: 100;
 }
 
 .profile > img {
     align-self: center;
-    padding-left: 5vh;
-    width: 20vw;
-    height: 15vh;
+    padding-left: 10vh;
+    padding-top: 1vw;
+    width: 5vw;
+    height: 10vh;
+    border: var(--white);
 }
 
 .profile > h1 {
+    padding-left: 1vw;
     color: var(--white);
     font-weight: 500;
 }
 
 .profile > h2 {
+    padding-left: 1vw;
     font-weight: 300;
     color: var(--pale-blue);
 }
 
 nav {
+    grid-area: profile2;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     background-color: var(--dark-blue);
     border-radius: 0% 0% 20% 20%;
     margin: 0vh 0vw 0vh 8vw;
     text-align: left;
-    height: 10vh;
+    height: 20vh;
     width: 30vw;
     z-index: 10;
 }
@@ -92,16 +97,10 @@ nav {
 nav > button {
     background-color: var(--dark-blue);
     color: var(--a);
+    padding: 2vh 0vw 0vh 2vw;
     margin-bottom: 0vh;
     font-size: 18px;
-}
-
-.work {
-    height: 20vh;
-    background-color: var(--dark-blue);
-    margin: 0vh 0vw 0vh 0vw;
-    border-radius: 10%;
-    z-index: 100;
+    gap: 0.5vw
 }
 
 .report {
@@ -109,108 +108,167 @@ nav > button {
     display: block;
 }
 
+.work {
+    grid-area: work;
+    height: 20vh;
+    background-color: var(--dark-blue);
+    color: white;
+    margin: -2.5vh 0vw 0vh 0vw;
+    border-radius: 10%;
+    z-index: 3;
+    position: relative; 
+}
+
 .top-work {
+    grid-area: work;
     display: flex;
     background-color: var(--light-red);
     height: 7.5vh;
-    margin: 0vh 0vw 0vh 0vw;
+    margin: 5vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
-    z-index: 10;
+    z-index: 1;
+    position: relative; 
+
 }
 
 .play {
+    grid-area: play;
     height: 20vh;
     background-color: var(--dark-blue);
-    margin: 0vh 0vw 0vh 0vw;
+    color: var(--white);
+    margin: -2.5vh 0vw 0vh 0vw;
     border-radius: 10%;
-    z-index: 100;
+    z-index: 3;
+    position: relative; 
 }
 
 .top-play {
+    grid-area: play;
     display: flex;
     background-color: var(--soft-blue);
     height: 7.5vh;
-    margin: 0vh 0vw 0vh 0vw;
+    margin: 5vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
-    z-index: 10;
+    z-index: 1;
+    position: relative; 
 }
+
 
 
 .study {
+    grid-area: study;
     height: 20vh;
     background-color: var(--dark-blue);
-    margin: 0vh 0vw 0vh 0vw;
+    color: var(--white);
+    margin: -2.5vh 0vw 0vh 0vw;
     border-radius: 10%;
-    z-index: 100;
+    z-index: 3;
+    position: relative; 
 }
 
 .top-study {
+    grid-area: study;
     display: flex;
     background-color: var(--light-redd);
     height: 7.5vh;
-    margin: 0vh 0vw 0vh 0vw;
+    margin: 5vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
 }
 
 
 .exercise {
+    grid-area: exercise;
     height: 20vh;
     background-color: var(--dark-blue);
-    margin: 0vh 0vw 0vh 0vw;
+    color: var(--white);
+    margin: -2.5vh 0vw 0vh 0vw;
     border-radius: 10%;
-    z-index: 100;
+    z-index: 3;
+    position: relative;
+
 }
 
 .top-exercise {
+    grid-area: exercise;
     display: flex;
     background-color: var(--lime-green);
     height: 7.5vh;
     margin: 0vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
 }
 
 .social {
+    grid-area: social;
     height: 20vh;
     background-color: var(--dark-blue);
-    margin: 0vh 0vw 0vh 0vw;
+    color: var(--white);
+    margin: -2.5vh 0vw 0vh 0vw;
     border-radius: 10%;
-    z-index: 100;
+    z-index: 3;
+    position: relative;
 }
 
 .top-social {
+    grid-area: social;
     display: flex;
     background-color: var(--violet);
     height: 7.5vh;
     margin: 0vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
 }
 
 .self-care {
+    grid-area: care;
     height: 20vh;
     background-color: var(--dark-blue);
-    margin: 0vh 0vw 0vh 0vw;
+    color: var(--white);
+    margin: -2.5vh 0vw 0vh 0vw;
     border-radius: 10%;
-    z-index: 100;
+    z-index: 3;
+    position: relative;
 }
 
 .top-self-care {
+    grid-area: care;
     display: flex;
     background-color: var(--soft-orange);
     height: 7.5vh;
     margin: 0vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
-    z-index: 10;
+    z-index: 1;
+    position: relative;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-title {
     color: var(--white);
+    padding: 2.5vh 0vw 0vh 1vw;
+}
+
+.hours-mounthly-prev, .hours-weekly-prev, .hours-daily-prev {
+    color: var(--pale-blue);
+    margin-left: 1vw;
+}
+
+.hours-daily, .hours-weekly, .hours-monthly {
+    font-size: 5vh;
+    margin-left: 1.5vw;
 }
