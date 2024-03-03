@@ -52,11 +52,12 @@
 .profile {
     grid-area: profile1;
     background-color: var(--blue);
-    border-radius: 10%;
-    margin: 10vh 0vw 0vh 8vw;
-    height: 40vh;
-    width: 30vw;
-    z-index: 100;
+    border-radius: 10% 10% 10% 10%;
+    margin: 11vh 0vw 0vh 8vw;
+    height: 37.5vh;
+    width: 15vw;
+    z-index: 3;
+    position: relative;
 }
 
 .profile > img {
@@ -66,6 +67,7 @@
     width: 5vw;
     height: 10vh;
     border: var(--white);
+    position: relative;
 }
 
 .profile > h1 {
@@ -86,18 +88,19 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--dark-blue);
-    border-radius: 0% 0% 20% 20%;
-    margin: 0vh 0vw 0vh 8vw;
+    border-radius: 0% 0% 10% 10%;
+    margin: 5.5vh 0vw 0vh 8vw;
     text-align: left;
-    height: 20vh;
-    width: 30vw;
-    z-index: 10;
+    height: 22.5vh;
+    width: 15vw;
+    z-index: 1;
+    position: relative;
 }
 
 nav > button {
     background-color: var(--dark-blue);
     color: var(--a);
-    padding: 2vh 0vw 0vh 2vw;
+    padding: 3.5vh 0vw 0vh 2vw;
     margin-bottom: 0vh;
     font-size: 18px;
     gap: 0.5vw
@@ -110,7 +113,8 @@ nav > button {
 
 .work {
     grid-area: work;
-    height: 20vh;
+    height: 22.5vh;
+    width: 17.5vw;
     background-color: var(--dark-blue);
     color: white;
     margin: -2.5vh 0vw 0vh 0vw;
@@ -124,17 +128,18 @@ nav > button {
     display: flex;
     background-color: var(--light-red);
     height: 7.5vh;
-    margin: 5vh 0vw 0vh 0vw;
+    width: 17.5vw;
+    margin: 11.5vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 1;
     position: relative; 
-
 }
 
 .play {
     grid-area: play;
-    height: 20vh;
+    height: 22.5vh;
+    width: 17.5vw;
     background-color: var(--dark-blue);
     color: var(--white);
     margin: -2.5vh 0vw 0vh 0vw;
@@ -148,18 +153,18 @@ nav > button {
     display: flex;
     background-color: var(--soft-blue);
     height: 7.5vh;
-    margin: 5vh 0vw 0vh 0vw;
+    width: 17.5vw;
+    margin: 11.5vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 1;
     position: relative; 
 }
 
-
-
 .study {
     grid-area: study;
-    height: 20vh;
+    height: 22.5vh;
+    width: 17.5vw;
     background-color: var(--dark-blue);
     color: var(--white);
     margin: -2.5vh 0vw 0vh 0vw;
@@ -173,24 +178,24 @@ nav > button {
     display: flex;
     background-color: var(--light-redd);
     height: 7.5vh;
-    margin: 5vh 0vw 0vh 0vw;
+    width: 17.5vw;
+    margin: 11.5vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 1;
     position: relative;
 }
 
-
 .exercise {
     grid-area: exercise;
-    height: 20vh;
+    height: 22.5vh;
+    width: 17.5vw;
     background-color: var(--dark-blue);
     color: var(--white);
     margin: -2.5vh 0vw 0vh 0vw;
     border-radius: 10%;
     z-index: 3;
     position: relative;
-
 }
 
 .top-exercise {
@@ -198,7 +203,8 @@ nav > button {
     display: flex;
     background-color: var(--lime-green);
     height: 7.5vh;
-    margin: 0vh 0vw 0vh 0vw;
+    width: 17.5vw;
+    margin: 1vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 1;
@@ -207,7 +213,8 @@ nav > button {
 
 .social {
     grid-area: social;
-    height: 20vh;
+    height: 22.5vh;
+    width: 17.5vw;
     background-color: var(--dark-blue);
     color: var(--white);
     margin: -2.5vh 0vw 0vh 0vw;
@@ -221,7 +228,8 @@ nav > button {
     display: flex;
     background-color: var(--violet);
     height: 7.5vh;
-    margin: 0vh 0vw 0vh 0vw;
+    width: 17.5vw;
+    margin: 1vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 1;
@@ -230,7 +238,8 @@ nav > button {
 
 .self-care {
     grid-area: care;
-    height: 20vh;
+    height: 22.5vh;
+    width: 17.5vw;
     background-color: var(--dark-blue);
     color: var(--white);
     margin: -2.5vh 0vw 0vh 0vw;
@@ -244,7 +253,8 @@ nav > button {
     display: flex;
     background-color: var(--soft-orange);
     height: 7.5vh;
-    margin: 0vh 0vw 0vh 0vw;
+    width: 17.5vw;
+    margin: 1vh 0vw 0vh 0vw;
     border-radius: 10% 10% 0% 0%;
     justify-content: end;
     z-index: 1;
